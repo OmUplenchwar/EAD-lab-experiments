@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: white;
+            padding: 15px;
+            width: 300px;
+            margin: auto;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+        button {
+            margin-top: 10px;
+            background-color: green;
+            color: white;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Feedback Form</h2>
+
+<form>
+    <label>Name:</label>
+    <input type="text" name="name">
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Feedback:</label>
+    <textarea name="message" rows="4"></textarea>
+
+    <label>Satisfaction Level:</label>
+    <input type="radio" name="satisfaction" value="Satisfied"> Satisfied
+    <input type="radio" name="satisfaction" value="Neutral"> Neutral
+    <input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

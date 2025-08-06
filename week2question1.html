@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+        form {
+            background-color: white;
+            padding: 15px;
+            width: 300px;
+            margin: auto;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+        button {
+            margin-top: 10px;
+            background-color: green;
+            color: white;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Student Registration</h2>
+
+<form>
+    <label>Name:</label>
+    <input type="text" name="name">
+
+    <label>Roll Number:</label>
+    <input type="text" name="roll">
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone">
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+
+    <label>Branch:</label>
+    <select name="branch">
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>MECH</option>
+        <option>CIVIL</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
